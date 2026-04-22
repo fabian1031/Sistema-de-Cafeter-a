@@ -18,7 +18,7 @@ Utilizamos el operador > para validar que el subtotal es mayor a los 30.000. Dev
 ¿En qué situación preferirías usar switch en lugar de una cadena de if-else? ¿Hay algún caso en
 este ejercicio donde el switch no sería la mejor opción?
 RTA/
-
+Cuando la condición no es un valor exacto sino un rango, por ejm si iva dependiera de precio es mayor a %5000, en ese caso no se puede expresar en un case, por que tocaria usar un if-else
 
 ## Ejercicio 4:
 ¿Qué ocurre si la condición del while nunca se vuelve falsa? ¿Cómo lo prevendrías en este
@@ -39,7 +39,7 @@ con do-while primero ejecuta la accion y después revisa la condición
 ¿Por qué usas for aquí y no while? ¿Qué tiene el for que lo hace más conveniente cuando
 conoces el número de elementos?
 RTA/
-
+Aunque ambos pueden hacer lo mismo, el for es más conveniente cuando conoces el número de elementos por que toda esta en la misma liena y no tengo que inicializar varialbes por fuera, evita descuidos como olvidar el contador.
 
 ## Ejercicio 7: 
 El siguiente código tiene errores. Encuéntralos, corrígelos y explica cada uno.
@@ -52,9 +52,11 @@ lógico? ¿Cómo los distingues?
 
 Respuesta: 
 Se encontraron 3 errores:
-1. El primero fue en el int debia ir sin comillas, es decir int cantidadVendida = 5;
+1. El primero fue en el int debia ir sin comillas, se esta intentando asignar un string a una variable de entero
 2. Faltaba el ; después de precioUnitario
-3. El de comparación en el if deberia ir con doble igual, es decir ==
+3. El de comparación en el if estaba como asignación y no comparacion
+
+
 
 
 Integrantes:
